@@ -12,9 +12,13 @@
         })
     })
     del.addEventListener('click', event =>{
-        if(screen.textContent.length > 1){
+        if(screen.textContent.slice(-1) == 0 && screen.textContent.length == 1){
+            return null;
+        }
+    else{
         screen.textContent = screen.textContent.slice(0, screen.textContent.length - 1);
-        }})
+
+    }})
     res.addEventListener('click', event=>{
         screen.textContent = 0;
     })
@@ -22,7 +26,7 @@
         try{
         screen.textContent = eval(screen.textContent);}
         catch(err){
-            screen.textContent = "Invalid Calculation";
+            screen.textContent = "Invalid Syntax";
         }
     })
     toggle.addEventListener('click', computer);
