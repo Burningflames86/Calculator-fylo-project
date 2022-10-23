@@ -14,6 +14,8 @@
     del.addEventListener('click', event =>{
         if(screen.textContent.slice(-1) == 0 && screen.textContent.length == 1){
             return null;
+        }else if(screen.textContent.length == 1){
+            screen.textContent = 0;
         }
     else{
         screen.textContent = screen.textContent.slice(0, screen.textContent.length - 1);
