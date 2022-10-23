@@ -22,7 +22,7 @@
         try{
         screen.textContent = eval(screen.textContent);}
         catch(err){
-            screen.textContent = "Invalid Calulation";
+            screen.textContent = "Invalid Calculation";
         }
     })
     toggle.addEventListener('click', computer);
