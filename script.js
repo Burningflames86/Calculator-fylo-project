@@ -22,7 +22,7 @@
         try{
         screen.textContent = eval(screen.textContent);}
         catch(err){
-            screen.textContent = "Invalid Syntax";
+            screen.textContent = "Invalid Calulation";
         }
     })
     toggle.addEventListener('click', computer);
