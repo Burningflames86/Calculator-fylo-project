@@ -1,0 +1,211 @@
+    body, html{
+        height: 90%;
+
+    }body{
+        overflow: hidden;
+        font-family: 'League Spartan', sans-serif;
+        /* background:  hsl(268, 75%, 9%); */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }.bodytheme1{
+        background:hsl(222, 26%, 31%);
+    }.bodytheme2{
+        background:hsl(0, 0%, 90%);
+    }.bodytheme3{
+        background:  hsl(268, 75%, 9%);
+    }
+    .container{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        width: 356px;
+        height: 70%;
+        row-gap: 6%;
+    }.screen{
+        /* background:hsl(224, 36%, 15%); */
+        border-radius: 7px;
+        /* color:white; */
+        text-align: right;
+        line-height: 300%;
+        font-size: 120%;
+        padding-right: 4%;
+    }.screentheme1{
+        background:hsl(224, 36%, 15%);
+        color:white;
+    }.screentheme2{
+        background:hsl(0, 0%, 93%);
+        color:hsl(60, 10%, 19%);
+    }.screentheme3{
+        background:hsl(268, 71%, 12%);
+        color:hsl(52, 100%, 62%);
+    }.keys{
+        /* background:hsl(223, 31%, 20%); */
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        justify-content: center;
+        grid-auto-rows: 17%;
+        padding:5%;
+        gap: 4%;
+        border-radius: 7px;
+    }.keystheme1{
+        background:hsl(223, 31%, 20%);
+    }.keystheme2{
+        background:hsl(0, 5%, 81%);
+    }.keystheme3{
+        background:hsl(268, 71%, 12%);
+    }.num{
+        text-align: center;
+        /* color: hsl(221, 14%, 31%); */
+        /* background:hsl(30, 25%, 89%); */
+        border-radius: 7px;
+        height: 100%;
+        line-height: 250%;
+        font-size: 120%;
+        /* box-shadow: 0px -3.5px hsl(28, 16%, 65%) inset; */
+        cursor: pointer;
+    }.numtheme1{
+        color: hsl(221, 14%, 31%);
+        background:hsl(30, 25%, 89%);
+        box-shadow: 0px -3.5px hsl(28, 16%, 65%) inset;
+    }.numtheme1:hover{
+        background:hsl(0, 0%, 100%);
+        box-shadow: none;
+    }.numtheme2{
+        color: hsl(60, 10%, 19%);
+        background:white;
+        box-shadow: 0px -3.5px  hsl(35, 11%, 61%) inset;
+    }.numtheme2:hover{
+        background:hsl(30, 25%, 89%);
+        box-shadow: none;
+    }.numtheme3{
+        color:hsl(52, 100%, 62%);
+        background: hsl(268, 47%, 21%);
+        box-shadow: 0px -3.5px  hsl(290, 70%, 36%) inset;
+    }.numtheme3:hover{
+        background: hsl(268, 54%, 15%);
+        box-shadow: none;
+    }
+    .n17, .n18{
+        grid-column: span 2;
+    }.n4theme1, .n17theme1{
+        background: hsl(222, 26%, 31%);
+        color:white;
+        box-shadow: 0px -3.5px hsl(224, 28%, 35%) inset;
+    }.n4theme1:hover, .n17theme1:hover{
+        background: hsl(223, 31%, 19%);
+        box-shadow: none;
+    }.n4theme2, .n17theme2{
+        color:white;
+        background: hsl(185, 42%, 37%);
+        box-shadow: 0px -3.5px hsl(185, 58%, 25%) inset;
+    }.n4theme2:hover, .n17theme2:hover{
+        background: hsl(184, 34%, 26%);
+        box-shadow: none;
+    }.n4theme3, .n17theme3{
+        color:white;
+        background: hsl(281, 89%, 26%);
+        box-shadow: 0px -3.5px hsl(285, 91%, 52%) inset;
+    }.n4theme3:hover, .n17theme3:hover{
+        background: hsl(281, 80%, 20%);
+        box-shadow: none;
+    }.n18theme1{
+        background:hsl(6, 63%, 50%);
+        color:white;
+        box-shadow: 0px -3.5px hsl(6, 70%, 34%) inset;
+    }.n18theme1:hover{
+        background:hsl(6, 88%, 51%);
+        box-shadow: none;
+    }.n18theme2{
+        background:hsl(25, 98%, 40%);
+        color:white;
+        box-shadow: 0px -3.5px hsl(25, 99%, 27%) inset;
+    }.n18theme2:hover{
+        background:hsl(6, 82%, 67%);
+        box-shadow: none;
+    }.n18theme3{
+        background:hsl(176, 100%, 44%);
+        color:hsl(198, 20%, 13%);
+        box-shadow: 0px -3.5px hsl(177, 92%, 70%) inset;
+    }.n18theme3:hover{
+        background:hsl(176, 100%, 15%);
+        box-shadow: none;
+    }.theme{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15%;
+        margin-bottom:-2%;
+        /* color:white; */
+    }.themetheme1{
+        color:white;
+    }.themetheme2{
+        color:hsl(60, 10%, 19%);
+    }.themetheme3{
+        color:hsl(52, 100%, 62%);
+    }.calc{
+        /* color: white; */
+        font-size: 27px;
+    }.calctheme1{
+        color: white;
+    }.calctheme2{
+        color:hsl(60, 10%, 19%);
+    }.calctheme3{
+        color:hsl(52, 100%, 62%);
+    }.h{
+        align-self:flex-end;
+        display: flex;
+        /* gap:20px; */
+    }input{
+        width: 55px;
+    }.change{
+        width: 60px;
+        height: 14px;
+        /* border: 2px hsl(223, 31%, 20%) solid;
+        background-color: hsl(223, 31%, 20%); */
+        border-radius: 35px;
+        position: relative;
+        display:flex;
+        align-items: center;
+        cursor: pointer;
+    }.changetheme1{
+        border: 2px hsl(223, 31%, 20%) solid;
+        background-color: hsl(223, 31%, 20%);
+    }.changetheme2{
+        border: 2px hsl(0, 5%, 81%) solid;
+        background-color: hsl(0, 5%, 81%);
+    }.changetheme3{
+        border: 2px hsl(268, 71%, 12%) solid;
+        background-color: hsl(268, 71%, 12%);
+    }.ball{
+        width: 20%;
+        height: 80%;
+        /* background:hsl(6, 63%, 50%); */
+        border-radius: 50%;
+        position:absolute;
+        margin: 2px;
+        /* left: 80%; */
+    }.balltheme1{
+        background:hsl(6, 63%, 50%);
+    }.balltheme2{
+        background:hsl(25, 98%, 40%);
+    }.balltheme3{
+        background:hsl(176, 100%, 44%);
+    }.nums{
+        display: flex;
+        gap:31%;
+        justify-content: center;
+    }.tcontainer{
+        display: flex;
+        gap:20%;
+    }.changec{
+        display: flex;
+        flex-direction: column;
+        row-gap: 10%;
+        margin-top:-20%;
+    }.poschange1{
+        left:0%;
+    }
+    .poschange2{
+        left: 38%;
+    }.poschange3{
+        left: 70%;
+    }
