@@ -7,26 +7,31 @@
     document.querySelectorAll('.strokes').forEach(element => {
         
         element.addEventListener('click', event =>{
-        if(screen.textContent.length < 15){
+        if(screen.textContent.length < 15 && screen.textContent.slice(0) != 0){
         screen.textContent = screen.textContent + element.textContent;}
+        else{
+            screen.textContent = element.textContent;
+        }
         })
     })
     del.addEventListener('click', event =>{
         if(screen.textContent.slice(-1) == 0 && screen.textContent.length == 1){
             return null;
-        }else if(screen.textContent.length == 1){
+        }if(screen.textContent.length == 1){
             screen.textContent = 0;
         }
     else{
-        screen.textContent = screen.textContent.slice(0, screen.textContent.length - 1);
+        screen.textContent = screen.textContent.slice(0, screen.textContent.length-1);
 
     }})
     res.addEventListener('click', event=>{
-        screen.textContent = "0";
+        screen.textContent = 0;
     })
     equal.addEventListener('click', event=>{
         try{
-        screen.textContent = eval(screen.textContent);}
+
+        screen.textContent = eval(screen.textContent);
+        }
         catch(err){
             screen.textContent = "Invalid Syntax";
         }
