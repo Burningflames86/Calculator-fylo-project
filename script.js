@@ -22,7 +22,7 @@
 
     }})
     res.addEventListener('click', event=>{
-        screen.textContent = 0;
+        screen.textContent = "0";
     })
     equal.addEventListener('click', event=>{
         try{
