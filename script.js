@@ -6,7 +6,7 @@
     let i=1;
     document.querySelectorAll('.strokes').forEach(element => {
         element.addEventListener('click', event =>{
-        if(screen.textContent.length < 13 && screen.textContent.slice(0) != 0 ){
+        if(screen.textContent.slice(0) != 0 ){
         screen.textContent = screen.textContent + element.textContent;
         }else if(screen.textContent == "Invalid Calculation"){
             screen.textContent = element.textContent;
@@ -32,7 +32,7 @@
     equal.addEventListener('click', event=>{
         try{
         let sol = eval(screen.textContent).toString();
-        screen.textContent = sol.slice(0,14);
+        screen.textContent = sol
         }
         catch(err){
             screen.textContent = "Invalid Calculation";
