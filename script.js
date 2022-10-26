@@ -19,10 +19,14 @@
     del.addEventListener('click', event =>{
         if(screen.textContent.slice(-1) == 0 && screen.textContent.length == 1){
             return null;
-        }if(screen.textContent.length == 1){
+        }else if(screen.textContent.length == 1){
+            screen.textContent = 0;
+            
+        }else if(screen.textContent.toString().match(".*[a-zA-Z]+.*")){
+            console.log("Ha");
             screen.textContent = 0;
         }
-    else{
+        else{
         screen.textContent = screen.textContent.slice(0, screen.textContent.length-1);
 
     }})
