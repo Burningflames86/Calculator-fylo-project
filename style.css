@@ -209,3 +209,8 @@
     }.poschange3{
         left: 70%;
     }
+    .display{
+        max-width: 330px;
+        overflow: scroll;
+        margin-left: 6%;
+    }
