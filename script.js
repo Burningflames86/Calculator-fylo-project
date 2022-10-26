@@ -8,7 +8,7 @@
         element.addEventListener('click', event =>{
         if(screen.textContent.length < 13 && screen.textContent.slice(0) != 0 ){
         screen.textContent = screen.textContent + element.textContent;
-        }else if(screen.textContent == "Invalid Syntax"){
+        }else if(screen.textContent == "Invalid Calculation"){
             screen.textContent = element.textContent;
         }
         else{
@@ -35,7 +35,7 @@
         screen.textContent = sol.slice(0,14);
         }
         catch(err){
-            screen.textContent = "Invalid Syntax";
+            screen.textContent = "Invalid Calculation";
         }
     })
     toggle.addEventListener('click', computer);
